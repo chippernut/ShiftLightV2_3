@@ -1053,7 +1053,7 @@ while (menuvar == 1){
         int coloradjust1 = rotary_process();         
         if (coloradjust1 == -128){cal--;}           
         if (coloradjust1 == 64){cal++;}                   
-        cal = constrain(cal, 1, 255); 
+        cal = constrain(cal, 0, 255); 
         
         if (prev_cal != cal){
           matrix.printFloat(cal/10.0,1);
